@@ -1,6 +1,7 @@
 # Le-Bon-coin
 
 *Présentation*
+
 Les utilisateurs du site pourront consulter les annonces déposées par les membres. Un
 système de recherche permettra de rechercher des annonces en fonction du prix, de la ville,
 des mots clés ou encore de la catégorie. Chaque utilisateur pourra ajouter autant d’annonces
