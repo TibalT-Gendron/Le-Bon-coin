@@ -4,19 +4,12 @@
 	 */
 	class Controller
 	{
-		private $page;
-		private $action;
-		function __construct($page,$action)
-		{
-			$this->page=$page;
-			$this->action=$action;
-		}
-
-		private function initPage(){
-			$pageClass= new $this->page;
-			$actioName=$this->$action.'Action';
-			if (method_exists($pageClass, $actioName)) {
-				$pageClass->$actioName;
+		
+		public function initPage($page,$action){
+			$pageClass= new $page;
+			$methodName=$action.'Action';
+			if (method_exists($pageClass, $methodName)) {
+				$pageClass->$methodName();
 			}
 		}
 	}
