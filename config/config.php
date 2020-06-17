@@ -14,7 +14,7 @@ define("APP_TIME_FUSEAU","Africa/Porto-novo");
 define("CONFIG_DB_CONNECT", 'mysql');
 define("CONFIG_DB_HOST", 'localhost');
 define("CONFIG_DB_PORT", 'xxxxx');
-define("CONFIG_DB_NAME", 'leboncoin');
+define("CONFIG_DB_NAME", 'lbc');
 define("CONFIG_DB_USER", 'root');
 define("CONFIG_DB_PASSWORD", '');
 define("CONFIG_DB_CHARSET", 'utf8mb4');
