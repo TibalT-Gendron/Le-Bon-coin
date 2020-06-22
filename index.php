@@ -4,6 +4,7 @@
    AutoLoader::register();
    $router= new AltoRouter();
    $GLOBALS['controller']=new Controller();
+   $GLOBALS['database']=new Database();
    #Creation des routes
 
    $router->map( 'GET', '/', function() {
