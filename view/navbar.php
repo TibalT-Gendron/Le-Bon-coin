@@ -1,4 +1,4 @@
- <!-- ======= Top Bar ======= -->
+ <!-- ======= Top Bar ======= 
   <section id="topbar" class="d-none d-lg-block">
     <div class="container d-flex">
       <div class="contact-info mr-auto">
@@ -15,42 +15,24 @@
     </div>
   </section>
 
-  <!-- ======= Header ======= -->
+  ======= Header ======= -->
   <header id="header">
     <div class="container d-flex">
 
       <div class="logo mr-auto">
-        <h1 class="text-light"><a href="index.html"><span>Eterna</span></a></h1>
+        <h1 class="text-light"><a href="/"><span><?=APP_NAME?></span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.html">Home</a></li>
-
-          <li class="drop-down"><a href="#">About</a>
-            <ul>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="team.html">Team</a></li>
-
-              <li class="drop-down"><a href="#">Drop Down 2</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li class="active"><a href="/poster-annonces" class="iconNav"><i class="icofont-bullhorn"></i> Poster une annonce</a></li>
+          <li><a href="/rechercher" class="iconNav"><i class="icofont-search-2"></i> Rechercher</a></li>
+          <li><a href="/compte" class="iconNav"> <i class="icofont-ui-user"></i> Mon compte</a></li>
+          <?php if (isset($_SESSION['user'])): ?>
+          <li><a href="/deconnexion" class="iconNav"> <i class="icofont-sign-out"></i> Se deconnecter</a></li>
+          <?php endif ?>
+          <li><a href="/panier"class="iconNav"> <i class="icofont-cart"></i> Panier</a></li>
 
         </ul>
       </nav><!-- .nav-menu -->

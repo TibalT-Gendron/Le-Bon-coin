@@ -12,7 +12,8 @@
 <link href="dist/vendor/icofont/icofont.min.css" rel="stylesheet">
 <link href="dist/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
 <link href="dist/vendor/animate.css/animate.min.css" rel="stylesheet">
-<link href="dist/vendor/owl.carousel/dist/owl.carousel.min.css" rel="stylesheet">
+<link href="dist/vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" rel="stylesheet">
+<link href="dist/vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css" rel="stylesheet">
 <link href="dist/vendor/venobox/venobox.css" rel="stylesheet">
 
 <!-- Template Main CSS File -->
