@@ -1,11 +1,14 @@
 <?php 
-	
-	class Home extends Render{
 
+	class Home extends Render{
+		private $data=['meta'=>['title'=>"Accueil","description"=>APP_DFAULT_DESCRIPTION]];
 		public function accueilAction(){
 			#important
-			$data=['meta'=>['title'=>"Accueil","description"=>""]];
-			$this->renders('Accueil',$data);
+			$annonces=new Annonces;
+			$this->data['body']['categories']=$annonces->getAllCategories();
+			$this->data['body']['ville']=$annonces->getAllVilles();
+			$this->data['body']['dernierAnnonces']=$annonces->getLatestAnnonces();
+			$this->renders('Accueil',$this->data);
 		}
 	}
 

@@ -5,7 +5,11 @@ class Autoloader
         spl_autoload_register(array(__CLASS__, 'my_autoload'));
     }
     static function my_autoload ($classname) {
-        require('class/'.$classname.'.class.php');
+        if (file_exists('class/'.$classname.'.class.php')) {
+        	require('class/'.$classname.'.class.php');
+        }else{
+        	require('model/'.$classname.'.model.php');
+        }
     }
     
 }
