@@ -1,3 +1,9 @@
-#dep {
-    float: right;
+.containerrow {
+    display: flex;
+    flex-direction: row
+}
+
+.containercolumn {
+    display: flex;
+    flex-direction: column
 }

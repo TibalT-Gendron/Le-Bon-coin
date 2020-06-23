@@ -7,125 +7,9 @@
     <title>Accueil</title>
 </head>
 <body>
-    <div id="categ">
-        <div>
-            <div>
-                <div>
-                    <a href="">EMPLOI</a><br>
-                    <a href="">Offres d'emploi</a><br>
-                    <a href="">Offres d'emploi Cadres</a><br>
-                    <a href="">Formations professionnelles</a>
-                </div>
-                <div>
-                    <a href="">VÉHICULES</a><br>
-                    <a href="">Voitures</a><br>
-                    <a href="">Motos</a><br>
-                    <a href="">Caravaning</a><br>
-                    <a href="">Utilitaires</a><br>
-                    <a href="">Camions</a><br>
-                    <a href="">Nautisme</a><br>
-                    <a href="">Équipement auto</a><br>
-                    <a href="">Équipement moto</a><br>
-                    <a href="">Équipement caravaning</a><br>
-                    <a href="">Équipement nautisme</a>
-                </div>
-                <div>
-                    <a href="">IMMOBILIER</a><br>
-                    <a href="">Ventes immobilières</a><br>
-                    <a href="">Immobilier Neuf</a><br>
-                    <a href="">Locations</a><br>
-                    <a href="">Colocations</a><br>
-                    <a href="">Bureaux & Commerces</a>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <a href="">VACANCES</a><br>
-                    <a href="">Locations & Gîtes</a><br>
-                    <a href="">Chambres d'hôtes</a><br>
-                    <a href="">Campings</a><br>
-                    <a href="">Hôtels</a><br>
-                    <a href="">Hébergements insolites</a><br>
-                    <a href="">Ventes privées vacances</a>
-                </div>
-                <div>
-                    <a href="">LOISIRS</a><br>
-                    <a href="">DVD - Films</a><br>
-                    <a href="">CD - Musique</a><br>
-                    <a href="">Livres</a><br>
-                    <a href="">Vélos</a><br>
-                    <a href="">Sports & Hobbies</a><br>
-                    <a href="">Instruments de musique</a><br>
-                    <a href="">Collection</a><br>
-                    <a href="">Jeux & Jouets</a><br>
-                    <a href="">Vins & Gastronomie</a>
-                </div>
-                <div>
-                    <a href="">ANIMAUX</a><br>
-                    <a href="">Animaux</a>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div>
-                <div>
-                    <a href="">MODE</a><br>
-                    <a href="">Vêtements</a><br>
-                    <a href="">Chaussures</a><br>
-                    <a href="">Accessoires & Bagagerie</a><br>
-                    <a href="">Montres & Bijoux</a><br>
-                    <a href="">Équipement bébé</a><br>
-                    <a href="">Vêtements bébé</a><br>
-                    <a href="">Luxe et Tendance</a>
-                </div>
-                <div>
-                    <a href="">MULTIMÉDIA</a><br>
-                    <a href="">Informatique</a><br>
-                    <a href="">Consoles & Jeux vidéo</a><br>
-                    <a href="">Image & Son</a><br>
-                    <a href="">Téléphonie</a>
-                </div>
-                <div>
-                    <a href="">SERVICES</a><br>
-                    <a href="">Prestations de services</a><br>
-                    <a href="">Billetterie</a><br>
-                    <a href="">Évènements</a><br>
-                    <a href="">Cours particuliers</a><br>
-                    <a href="">Covoiturage</a>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <a href="">MAISON</a><br>
-                    <a href="">Ameublement</a><br>
-                    <a href="">Électroménager</a><br>
-                    <a href="">Arts de la table</a><br>
-                    <a href="">Décoration</a><br>
-                    <a href="">Linge de maison</a><br>
-                    <a href="">Bricolage</a><br>
-                    <a href="">Jardinage</a>
-                </div>
-                <div>
-                    <a href="">MATÉRIEL PROFESSIONNEL</a><br>
-                    <a href="">Matériel agricole</a><br>
-                    <a href="">Transport - Manutention</a><br>
-                    <a href="">BTP - Chantier gros-oeuvre</a><br>
-                    <a href="">Outillage - Matériaux 2nd-oeuvre</a><br>
-                    <a href="">Équipements industriels</a><br>
-                    <a href="">Restauration - Hôtellerie</a><br>
-                    <a href="">Fournitures de bureau</a><br>
-                    <a href="">Commerces & Marchés</a><br>
-                    <a href="">Matériel médical</a>
-                </div>
-                <div>
-                    <a href="">DIVERS</a><br>
-                    <a href="">Autres</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <form action="/action_page.php" id="dep">
+    <form action="/action_page.php">
         <select name="departement" id="departement">
+            <option value="00">Choisir un département</option>
             <option value="01">01-Ain</option>
             <option value="02">02-Aisne</option>
             <option value="03">03-Allier</option>
@@ -229,6 +113,123 @@
             <option value="976">976-Mayotte</option>
         </select>
         <input type="submit" value="Submit">
-      </form>
+        <div id="categ" class="containerrow">
+            <div class="containerrow">
+                <div class="containercolumn">
+                    <div>
+                        <a href="">EMPLOI</a><br>
+                        <a href="">Offres d'emploi</a><br>
+                        <a href="">Offres d'emploi Cadres</a><br>
+                        <a href="">Formations professionnelles</a>
+                    </div>
+                    <div>
+                        <a href="">VÉHICULES</a><br>
+                        <a href="">Voitures</a><br>
+                        <a href="">Motos</a><br>
+                        <a href="">Caravaning</a><br>
+                        <a href="">Utilitaires</a><br>
+                        <a href="">Camions</a><br>
+                        <a href="">Nautisme</a><br>
+                        <a href="">Équipement auto</a><br>
+                        <a href="">Équipement moto</a><br>
+                        <a href="">Équipement caravaning</a><br>
+                        <a href="">Équipement nautisme</a>
+                    </div>
+                    <div>
+                        <a href="">IMMOBILIER</a><br>
+                        <a href="">Ventes immobilières</a><br>
+                        <a href="">Immobilier Neuf</a><br>
+                        <a href="">Locations</a><br>
+                        <a href="">Colocations</a><br>
+                        <a href="">Bureaux & Commerces</a>
+                    </div>
+                </div>
+                <div class="containercolumn">
+                    <div>
+                        <a href="">VACANCES</a><br>
+                        <a href="">Locations & Gîtes</a><br>
+                        <a href="">Chambres d'hôtes</a><br>
+                        <a href="">Campings</a><br>
+                        <a href="">Hôtels</a><br>
+                        <a href="">Hébergements insolites</a><br>
+                        <a href="">Ventes privées vacances</a>
+                    </div>
+                    <div>
+                        <a href="">LOISIRS</a><br>
+                        <a href="">DVD - Films</a><br>
+                        <a href="">CD - Musique</a><br>
+                        <a href="">Livres</a><br>
+                        <a href="">Vélos</a><br>
+                        <a href="">Sports & Hobbies</a><br>
+                        <a href="">Instruments de musique</a><br>
+                        <a href="">Collection</a><br>
+                        <a href="">Jeux & Jouets</a><br>
+                        <a href="">Vins & Gastronomie</a>
+                    </div>
+                    <div>
+                        <a href="">ANIMAUX</a><br>
+                        <a href="">Animaux</a>
+                    </div>
+                </div>
+            </div>
+            <div class="containerrow">
+                <div class="containercolumn">
+                    <div>
+                        <a href="">MODE</a><br>
+                        <a href="">Vêtements</a><br>
+                        <a href="">Chaussures</a><br>
+                        <a href="">Accessoires & Bagagerie</a><br>
+                        <a href="">Montres & Bijoux</a><br>
+                        <a href="">Équipement bébé</a><br>
+                        <a href="">Vêtements bébé</a><br>
+                        <a href="">Luxe et Tendance</a>
+                    </div>
+                    <div>
+                        <a href="">MULTIMÉDIA</a><br>
+                        <a href="">Informatique</a><br>
+                        <a href="">Consoles & Jeux vidéo</a><br>
+                        <a href="">Image & Son</a><br>
+                        <a href="">Téléphonie</a>
+                    </div>
+                    <div>
+                        <a href="">SERVICES</a><br>
+                        <a href="">Prestations de services</a><br>
+                        <a href="">Billetterie</a><br>
+                        <a href="">Évènements</a><br>
+                        <a href="">Cours particuliers</a><br>
+                        <a href="">Covoiturage</a>
+                    </div>
+                </div>
+                <div class="containercolumn">
+                    <div>
+                        <a href="">MAISON</a><br>
+                        <a href="">Ameublement</a><br>
+                        <a href="">Électroménager</a><br>
+                        <a href="">Arts de la table</a><br>
+                        <a href="">Décoration</a><br>
+                        <a href="">Linge de maison</a><br>
+                        <a href="">Bricolage</a><br>
+                        <a href="">Jardinage</a>
+                    </div>
+                    <div>
+                        <a href="">MATÉRIEL PROFESSIONNEL</a><br>
+                        <a href="">Matériel agricole</a><br>
+                        <a href="">Transport - Manutention</a><br>
+                        <a href="">BTP - Chantier gros-oeuvre</a><br>
+                        <a href="">Outillage - Matériaux 2nd-oeuvre</a><br>
+                        <a href="">Équipements industriels</a><br>
+                        <a href="">Restauration - Hôtellerie</a><br>
+                        <a href="">Fournitures de bureau</a><br>
+                        <a href="">Commerces & Marchés</a><br>
+                        <a href="">Matériel médical</a>
+                    </div>
+                    <div>
+                        <a href="">DIVERS</a><br>
+                        <a href="">Autres</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
 </body>
 </html>
