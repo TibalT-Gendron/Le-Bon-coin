@@ -1,9 +1,25 @@
+body {
+    text-align: center;
+}
+
 .containerrow {
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .containercolumn {
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.container {
+    padding: 1em;
+}
+
+#departement {
+    padding-left: auto;
+    padding-right: auto;
+    width: 20em;
 }
