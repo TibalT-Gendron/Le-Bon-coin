@@ -13,7 +13,7 @@ interne.
 - • un IDE (environnement de développement) : visual studio code
 - • un serveur web local                    : WAMP
 - • un serveur de production                : hostinger
-- • un langage de développement web         : HMTL, CSS, JAVASCRIPT , PHP
+- • un langage de développement web         : HMTL, CSS, JAVASCRIPT , PHP PDO, BOOSTRAP=
 -   GIT
 
 
