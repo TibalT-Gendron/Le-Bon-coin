@@ -8,7 +8,7 @@
     	require_once('view/navbar.php');
     	require_once 'view/'.$pagename.'_vue.php';
     	require_once('view/footer.php');
-    	require_once('view/js.php');
+    	require_once('view/js.php'); 
     ?>
 </body>
 </html>

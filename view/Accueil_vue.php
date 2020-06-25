@@ -1,6 +1,4 @@
 
-<?php //var_dump($data);die; ?>
- 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="hidden d-none">
     <div class="hero-container">
@@ -62,7 +60,7 @@
   <main id="main">
 
     <!-- ======= Featured Section ======= -->
-    <section id="featured" class="featured">
+    <section id="featured" class="featured d-none">
       <div class="container">
 
         <div class="row">
@@ -92,7 +90,7 @@
       </div>
     </section><!-- End Featured Section -->
     <!-- ======= Categorie Section ======= -->
-    <section id="services" class="services">
+    <section id="services" class="services d-none">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
@@ -113,13 +111,60 @@
       </div>
     </section><!-- End Services Section -->
 
+   
+
     <!-- ======= Clieategorients Section ======= -->
     <section class="annonces">
+      <div class="section-title" data-aos="fade-up">
+          <h2>Bienvenue sur <?=APP_NAME?></h2>
+        </div>
       <div class="container">
+        <span class="text-bold text-info mb-3 text-big text-bold" style="font-size: 30px"><i class="icofont-horn"></i> Annonces</span>
       <div class="myHeader">
-        <span class="text-bold">Dernieres annonces</span>
-        <a href="/annonces" style="color: white"><i class="icofont-plus-circle"></i> Voir toutes</a>
+        
+        <form class="d-flex w-100 " method="post">
+          <select type="text" placeholder="" name="categorie"  class="form-control w-25" value="" required="">
+          <option value="all">Toute les categories</option>
+          <?php foreach ($data->body['categories'] as $row): ?>
+            <option <?=(isset($_POST['categorie']) && $_POST['categorie']==$row['categorie_id'])?"selected":""?> value="<?=$row['categorie_id']?>"><?=$row['name']?></option>
+          <?php endforeach ?>
+        </select>
+        <select type="text" placeholder="" name="ville"  class="form-control w-25" value="" required="">
+          <option value="all">Toutes les villes</option>
+          <?php foreach ($data->body['ville'] as $row): ?>
+            <option <?=(isset($_POST['ville']) && $_POST['ville']==$row['ville_id'])?"selected":""?> value="<?=$row['ville_id']?>"><?=$row['name']?></option>
+          <?php endforeach ?>
+        </select>
+        <input type="text" name="prixmin" min="0" value="<?=(isset($_POST['prixmin']))?$_POST['prixmin']:'0'?>" class="form-control" style="max-width: 100px" value="0" required>
+        <input type="text" name="prixmax" min="50000" value="<?=(isset($_POST['prixmax']))?$_POST['prixmax']:'50000'?>" class="form-control w-10" style="max-width: 100px" value="50000" required>
+        <input type="text" name="q" class="form-control" placeholder="Rechercher...." value="<?=(isset($_POST['q']))?$_POST['q']:''?>">
+        <input type="submit"  value="Filter" name="rechercher" class="btn btn-warning">
+        </form>
       </div>
+      <div class="row py-2">
+            <?php foreach ($data->body['Annonces'] as $row): ?>
+              <?php $photo=(array)json_decode($row['photos']) ?>
+              <div class="col-md-6">
+                <div class="card" style="width:400px;margin: 20px">
+                  <img class="card-img-top" src="/file/img/<?=!empty($photo[1])?$photo[1]:"nopostephoto.jpg"?>" alt="Card image">
+                  <div class="card-body">
+                    
+                    <div class="d-flex text-white justify-content-between ">
+                      <h4 class="card-title text-primary"><?=$row['title']?></h4>
+                    <h4 class="card-title text-info"><?=number_format($row['prix']). "E"?></h4>
+                    </div>
+                    <div class="d-flex text-white justify-content-between ">
+                      <div class="py-2 text-danger"><?=$row['name']?></div>
+                      <div class="py-2 text-muted"><?=$row['date_created']?></div>
+                    </div>
+                    <p class="card-text"><?=$row['description']?></p>
+                    <a href="/annonce-<?=$row['annonce_id']?>" class="btn btn-primary">Detail de l'annonce</a>
+                    <a href="/annonce-<?=$row['annonce_id']?>" class="btn btn-primary">Detail de l'annonce</a>
+                  </div>
+                </div>
+              </div>
+            <?php endforeach ?>
+          </div>
       </div>
     </section>
 
