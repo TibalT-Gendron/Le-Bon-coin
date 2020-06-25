@@ -1,9 +1,3 @@
-/**
-* Template Name: Eterna - v2.0.0
-* Template URL: https://bootstrapmade.com/eterna-free-multipurpose-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
@@ -2203,6 +2197,10 @@ section {
 .iconNav i{
   font-size:15px
 }
+.myHeader2{
+  display: flex;
+  flex-direction: column!important;
+}
 }
 .myHeader{
   padding: 20px;
@@ -2214,10 +2212,39 @@ section {
   background: #ff6e14;
   font-weight: bold
 }
+.myHeader2{
+  padding: 5px;
+  margin-bottom:10px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  background: #ff6e14;
+  font-weight: bold
+
+}
 .myHeader a{
   font-size: 17px;
   transition: .5s;
 }
 .myHeader a:hover{
   font-size: 18px;
+}
+
+.myHeader2 a{
+  font-size: 17px;
+  transition: .5s;
+  padding: 20px 40px;
+  color:white;
+  margin-left: 10px
+}
+.myHeader2 a:hover{
+  font-size: 17px;
+  transition: .5s;
+  background: white;
+  color:#ff6e14;
+}
+
+.myHeader2 .active{
+  background: white;
+  color:#ff6e14;
 }

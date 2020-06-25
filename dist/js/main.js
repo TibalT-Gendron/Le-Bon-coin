@@ -1,9 +1,4 @@
-/**
-* Template Name: Eterna - v2.0.0
-* Template URL: https://bootstrapmade.com/eterna-free-multipurpose-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 !(function($) {
   "use strict";
 
@@ -177,4 +172,10 @@
     items: 1
   });
 
+
+//modifier profile
+$(document).on('click','#modifierProfile',function(){
+  $('#profileform .form-control').attr('readonly',false);
+  $('#profileform [type="submit"]').show();
+})
 })(jQuery);
